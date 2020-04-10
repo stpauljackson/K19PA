@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+           function jazz(){
+                    var c=document.getElementById('content');
+                    c.innerHTML='Jazz is a music genre that originated in the African-American communities of New Orleans, United States. It originated in the late 19th and early 20th centuries, and developed from roots in blues and ragtime. Jazz is seen by many as "America\'s classical music". Since the 1920s Jazz Age, jazz has become recognized as a major form of musical expression. It then emerged in the form of independent traditional and popular musical styles, all linked by the common bonds of African-American and European-American musical parentage with a performance orientation.Jazz is characterized by swing and blue notes, call and response vocals, polyrhythms and improvisation. Jazz has roots in West African cultural and musical expression, and in African-American music traditions including blues and ragtime, as well as European military band music. Intellectuals around the world have hailed jazz as "one of America\'s original art forms"<br><strong>Artist : Miles Davis</strong>'
+            };
+            function pop(){
+                    var c=document.getElementById('content');
+                    c.innerHTML='Pop music is a genre of popular music that originated in its modern forms in the US and the UK during the mid-1950s. The terms "popular music" and "pop music" are often used interchangeably, although the former describes all music that is popular and includes many diverse styles. "Pop" and "rock" were roughly synonymous terms until the late 1960s, when they became quite separated from each other.<br><strong>Artist : Taylor Swift, Katy Perry</strong>'
+            };
+            function rock(){
+                    var c=document.getElementById('content');
+                    c.innerHTML='Rock music is a broad genre of popular music that originated as "rock and roll" in the United States in the early 1950s, and developed into a range of different styles in the 1960s and later, particularly in the United States and the United Kingdom. It has its roots in 1940s and 1950s rock and roll, a style which drew heavily from the genres of blues, rhythm and blues, and from country music. Rock music also drew strongly from a number of other genres such as electric blues and folk, and incorporated influences from jazz, classical and other musical styles. Musically, rock has centered on the electric guitar, usually as part of a rock group with electric bass, drums, and one or more singers. Usually, rock is song-based music with a 4/4 time signature using a verse–chorus form, but the genre has become extremely diverse. Like pop music, lyrics often stress romantic love but also address a wide variety of other themes that are frequently social or political.<br><strong>Artist : The Beatles,Queen</strong>'
+            };
+            function rap(){
+                    var c=document.getElementById('content');
+                    c.innerHTML='Rapping (or rhyming, spitting, emceeing, MCing) is a musical form of vocal delivery that incorporates "rhyme, rhythmic speech, and street vernacular", which is performed or chanted in a variety of ways, usually over a backing beat or musical accompaniment. The components of rap include "content" (what is being said), "flow" (rhythm, rhyme), and "delivery" (cadence, tone).Rap differs from spoken-word poetry in that it is usually performed in time to musical accompaniment.Rap being a primary ingredient of hip hop music, it is commonly associated with that genre in particular; however, the origins of rap precede hip-hop culture. The earliest precursor to modern rap is the West African griot tradition, in which "oral historians", or "praise-singers", would disseminate oral traditions and genealogies, or use their rhetorical techniques for gossip or to "praise or critique individuals." Griot traditions connect to rap along a lineage of black verbal reverence.<br><strong>Artist : Eminem,Drake</strong>'
+            };
+            function classical(){
+                    var c=document.getElementById('content');
+                    c.innerHTML='Classical music is art music produced or rooted in the traditions of Western culture, including both liturgical (religious) and secular music. While a more precise term is also used to refer to the period from 1750 to 1820 (the Classical period), this article is about the broad span of time from before the 6th century AD to the present day, which includes the Classical period and various other periods.The central norms of this tradition became codified between 1550 and 1900, which is known as the common-practice period.<br><strong>Artist : George Benjamin</strong>'
+            };
+            function HOME(){
+                var c=document.getElementById('content');
+                c.innerHTML='This is home page click any link to know about music'
+            }
+        </script>
+        <style>
+            #cont{
+                
+                text-align: center;
+                display: flex;
+                margin-top: 0px;
+            }
+            #id1{
+                background-color: aquamarine;
+                height: 500px;
+            padding: 20px;
+            width: 25%;
+            margin-top: 0px;
+            border:1px solid black;
+            }
+            #id2{
+                background-color: lightgreen;
+            display:flex;
+            padding: 20px;
+            margin-top: 0px;
+            border:1px solid black;
+               width: 75%;
+            }
+            .nav{
+                background-color: goldenrod;
+                cursor: pointer;
+                margin-top: 7%;
+                border: 1px solid black;
+            }
+            #list{
+                text-decoration: underline;
+                background-color: aqua;
+                text-align: left;
+                cursor: pointer;
+                display: inline-block;
+                padding: 5px;
+                margin: 30px;
+                width: 15%;
+                height: 35%;
+                flex: 1;
+                border: 1px solid black;
+            }
+            #info{
+                text-align: left;
+                flex: 5;
+                display: inline-block;
+            }
+            h2{
+                margin: 20px;
+                position: fixed; 
+                top: 0;
+                left: 46%;
+            }
+            h3{
+                position:fixed;
+                top: 250px;
+                left: 58%;
+            }
+            #p1{
+                position: fixed;
+                top: 280px;
+            }
+            #p2{
+                position: fixed;
+                top: 310px;
+            }
+            #p3{
+                position: fixed;
+                top: 340px;
+            }
+        </style>
+    </head>
+    <body style="background-color: dodgerblue;">
+        <div id="cont">
+            <div  id='id1'>
+                <p class="nav" onclick="HOME()">HOME</p>
+                <p class="nav">BOLLYWOOD</p>
+                <p class="nav">HOLLYWOOD</p>
+                <p class="nav">TOLLYWOOD</p>
+                <p class="nav">CONTACT US</p>
+            
+            </div>
+            <div id='id2'>
+                <h2>CHARTBUSTERS</h2>
+                <div id='list'>
+                    <ul>
+                        <li onclick="jazz()">jazz</li>
+                        <li onclick="pop()">pop</li>
+                        <li onclick="rock()">rock</li>
+                        <li onclick="rap()">rap</li>
+                        <li onclick="classical()">classical</li>
+                    </ul>
+                </div>
+                <div id='info'>
+                    <br>
+                    <p id="content">This is home page click any link to know about music</p>
+            </div >
+            <h3>about us</h3>
+            <p id="p1" class="about"><strong>Name:</strong> Arjun Singh   <strong>Roll Number:</strong>11912205 <strong>Section:</strong>K19PA </p>
+            <p id="p2" class="about"><strong>Name:</strong> Sushant Kumar <strong>Roll Number:</strong>11912204 <strong>Section:</strong>K19PA </p>
+            <p id="p3" class="about"><strong>Name:</strong> Shubham Verma <strong>Roll Number:</strong>11912119 <strong>Section:</strong>K19PA </p>
+            </div>
+        </div>
+    </body>
+</html>
